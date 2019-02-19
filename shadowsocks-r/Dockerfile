@@ -3,7 +3,7 @@
 # https://github.com/shadowsocksrr/shadowsocksr
 
 FROM debian:stretch
-LABEL vank3f3
+LABEL maintainer="vank3f3"
 
 RUN set -ex \
 	&& apt-get update \

@@ -3,7 +3,7 @@
 # https://github.com/shadowsocks/shadowsocks-go
 
 FROM alpine:latest
-LABEL vank3f3
+LABEL maintainer="vank3f3"
 
 RUN runDeps="\
 	wget \

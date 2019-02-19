@@ -3,7 +3,7 @@
 # https://github.com/shadowsocksrr/shadowsocksr
 
 FROM python:3.6-alpine
-LABEL vank3f3
+LABEL maintainer="vank3f3"
 
 RUN runDeps="\
 		tar \

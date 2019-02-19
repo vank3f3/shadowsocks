@@ -3,7 +3,7 @@
 # https://github.com/shadowsocks/shadowsocks-libev
 
 FROM debian:stretch
-LABEL vank3f3
+LABEL maintainer="vank3f3"
 
 RUN set -ex \
 	&& printf "deb http://deb.debian.org/debian sid main" > /etc/apt/sources.list.d/sid.list \

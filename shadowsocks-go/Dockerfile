@@ -15,7 +15,7 @@ RUN apk update && apk add --no-cache --virtual .build-deps wget \
 	&& mv shadowsocks-server-linux64-1.2.2 /usr/bin/shadowsocks-server \
 	&& apk del .build-deps
 
-COPY config_sample.json /etc/shadowsocks-go/config.json
+COPY config_sample.json /etc/shadowsocks-go/
 VOLUME /etc/shadowsocks-go
 
 USER nobody

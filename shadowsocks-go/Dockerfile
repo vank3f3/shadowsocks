@@ -5,11 +5,7 @@
 FROM alpine:latest
 LABEL maintainer="vank3f3"
 
-RUN runDeps="\
-	wget \
-	"; \
-	set -ex \
-	&& apk add --no-cache --virtual .build-deps ${runDeps} \
+RUN apk add --no-cache --virtual .build-deps wget \
 	&& mkdir /lib64 \
 	&& ln -s /lib/libc.musl-x86_64.so.1 /lib64/ld-linux-x86-64.so.2 \
 	&& cd /tmp \
